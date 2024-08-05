@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>MentorJournal_v0._1</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="asset\activist.png" />
+    <None Remove="asset\arrow-in-square.png" />
+    <None Remove="asset\chevron-left.svg" />
+    <None Remove="asset\dorm.png" />
+    <None Remove="asset\dormitory.png" />
+    <None Remove="asset\dormotory.png" />
+    <None Remove="asset\event.png" />
+    <None Remove="asset\hobbies.png" />
+    <None Remove="asset\individualWork.png" />
+    <None Remove="asset\parrentConference.png" />
+    <None Remove="asset\socialPassport.png" />
+    <None Remove="asset\user.png" />
+    <None Remove="asset\visitedList.png" />
+    <None Remove="asset\wachingList.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="H.XamlStyler" Version="1.0.4" />
+    <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.1.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SharpVectors" Version="1.8.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="asset\activist.png" />
+    <Resource Include="asset\dormitory.png" />
+    <Resource Include="asset\dormotory.png" />
+    <Resource Include="asset\event.png" />
+    <Resource Include="asset\hobbies.png" />
+    <Resource Include="asset\individualWork.png" />
+    <Resource Include="asset\parrentConference.png" />
+    <Resource Include="asset\socialPassport.png" />
+    <Resource Include="asset\user.png" />
+    <Resource Include="asset\visitedList.png" />
+    <Resource Include="asset\wachingList.png" />
+  </ItemGroup>
+
+</Project>

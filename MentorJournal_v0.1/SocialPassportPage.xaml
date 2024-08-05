@@ -1,0 +1,70 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MentorJournal_v0._1"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="MentorJournal_v0._1.SocialPassportPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1060"
+      Background="Transparent">
+
+    <Border Background="White"
+            CornerRadius="20">
+
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="Gray"/>
+        </Border.Effect>
+
+        <StackPanel>
+
+            <ScrollViewer VerticalScrollBarVisibility="Hidden"
+                          MaxHeight="500"
+                          VerticalAlignment="Top"
+                          Margin="25"
+                          Width="900"
+                          x:Name="socialScroll">
+
+                <Grid x:Name="socialGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0"
+                                x:Name="fioStack"/>
+
+                    <StackPanel Grid.Column="1"
+                                x:Name="statusStack"/>
+
+                </Grid>
+
+            </ScrollViewer>
+
+            <Grid>
+                
+                <Button x:Name="addInvalidButton"
+                    Height="40"
+                    Width="150"
+                    Style="{StaticResource MaterialDesignFlatAccentBgButton}"
+                    Content="Добавить"
+                    FontSize="20" Click="addInvalidButton_Click"
+                        HorizontalAlignment="Left"
+                        Margin="250 0 0 0"/>
+
+                <Button x:Name="saveSocialStatuses"
+                        Height="40"
+                        Width="150"
+                        Style="{StaticResource MaterialDesignFlatAccentBgButton}"
+                        Content="Сохранить"
+                        FontSize="20" Click="saveSocialStatuses_Click"
+                        HorizontalAlignment="Right"
+                        Margin="0 0 250 0"/>
+
+            </Grid>
+
+            
+
+        </StackPanel>
+    </Border>
+</Page>

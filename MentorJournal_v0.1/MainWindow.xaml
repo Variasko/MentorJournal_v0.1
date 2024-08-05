@@ -1,0 +1,160 @@
+﻿<Window x:Class="MentorJournal_v0._1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MentorJournal_v0._1"
+        xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+        mc:Ignorable="d"
+        Height="800"
+        Width="1200"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
+
+    <Border Background="#ffdadada"
+            CornerRadius="20">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="100*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="20*"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Column="0"
+                    Grid.Row="0"
+                    CornerRadius="20"
+                    Margin="15,15,15,15"
+                    Background="White">
+
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="Gray"/>
+                </Border.Effect>
+
+                <Image x:Name="profole"
+                       Source="/asset/user.png" 
+                       Height="50"
+                       Width="50"/>
+
+            </Border>
+
+            <Button x:Name="exitButton"
+                    Content="X"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right"
+                    Margin="0,20,20,0" Click="exitButton_Click" Height="32" Width="41"/>
+
+            <Border CornerRadius="20"
+                    Background="White"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    VerticalAlignment="Center"
+                    Margin="15,0,15,0"
+                    MaxHeight="600" Height="600">
+
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="Gray"/>
+                </Border.Effect>
+
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+
+                    <StackPanel x:Name="sideMenu">
+
+                        <Image x:Name="socialPassport" Source="/asset/socialPassport.png" Width="50" Height="50" Margin="0 15 0 15" MouseDown="socialPassport_MouseDown">
+                            <Image.ToolTip>
+                                <TextBlock>
+                                    Социальный пасспорт
+                                </TextBlock>
+                            </Image.ToolTip>
+                        </Image>
+
+                        <Image x:Name="dormitory" Source="/asset/dormitory.png" Width="50" Height="50" Margin="0 0 0 15" MouseDown="dormitory_MouseDown">
+                            <Image.ToolTip>
+                                <TextBlock>
+                                    Студенты из общежития
+                                </TextBlock>
+                            </Image.ToolTip>
+                        </Image>
+
+                        <Image x:Name="parrentConference" Source="/asset/parrentConference.png" Width="50" Height="50" Margin="0 0 0 15">
+                            <Image.ToolTip>
+                                <TextBlock>
+                                    Протоколы родительских собраний
+                                </TextBlock>
+                            </Image.ToolTip>
+                        </Image>
+
+                        <Image x:Name="wachingList" Source="/asset/wachingList.png" Width="50" Height="50" Margin="0 0 0 15">
+                            <Image.ToolTip>
+                                <TextBlock>
+                                    Лист наблюдений(характеристики)
+                                </TextBlock>
+                            </Image.ToolTip>
+                        </Image>
+
+                        <Image x:Name="visitedList" Source="/asset/visitedList.png" Width="50" Height="50" Margin="0 0 0 15">
+                            <Image.ToolTip>
+                                <TextBlock>
+                                    Посещение студентами классных часов
+                                </TextBlock>
+                            </Image.ToolTip>
+                        </Image>
+
+                        <Image x:Name="events" Source="/asset/event.png" Width="50" Height="50" Margin="0 0 0 15">
+                            <Image.ToolTip>
+                                <TextBlock>
+                                    Планы мероприятий
+                                </TextBlock>
+                            </Image.ToolTip>
+                        </Image>
+
+                        <Image x:Name="hobbies" Source="/asset/hobbies.png" Width="50" Height="50" Margin="0 0 0 15">
+                            <Image.ToolTip>
+                                <TextBlock>
+                                    Внеучебная занятость
+                                </TextBlock>
+                            </Image.ToolTip>
+                        </Image>
+
+                        <Image x:Name="activists" Source="/asset/activist.png" Width="50" Height="50" Margin="0 0 0 15">
+                            <Image.ToolTip>
+                                <TextBlock>
+                                    Активисты группы
+                                </TextBlock>
+                            </Image.ToolTip>
+                        </Image>
+
+                        <Image x:Name="individualWork" Source="/asset/individualWork.png" Width="50" Height="50" Margin="0 0 0 15">
+                            <Image.ToolTip>
+                                <TextBlock>
+                                    Индивидуальная работа со студентами/родителями
+                                </TextBlock>
+                            </Image.ToolTip>
+                        </Image>
+
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+            <Frame x:Name="mainFrame"
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Height="600"
+                   Width="1060"
+                   MaxHeight="600"
+                   NavigationUIVisibility="Hidden"/>
+
+        </Grid>
+
+    </Border>
+
+</Window>
