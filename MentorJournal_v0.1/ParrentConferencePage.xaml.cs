@@ -24,5 +24,10 @@ namespace MentorJournal_v0._1
         {
             InitializeComponent();
         }
+
+        private void AddNewConference_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AddNewParrentConferencePage());
+        }
     }
 }

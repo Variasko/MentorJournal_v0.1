@@ -18,6 +18,14 @@
 
         <StackPanel>
 
+            <ComboBox VerticalAlignment="Top"
+                          HorizontalAlignment="Center"
+                          Width="200"
+                          Margin="0 20 0 0"
+                          x:Name="groupName"
+                          FontSize="15"
+                          SelectedIndex="0"/>
+
             <ScrollViewer VerticalScrollBarVisibility="Hidden"
                           MaxHeight="500"
                           VerticalAlignment="Top"
@@ -64,7 +72,7 @@
                     Content="Добавить"
                     FontSize="20" Click="addInvalidButton_Click"
                         HorizontalAlignment="Left"
-                        Margin="250 0 0 0"/>
+                        Margin="300 0 0 0"/>
 
                 <Button x:Name="saveSocialStatuses"
                         Height="40"
@@ -73,7 +81,7 @@
                         Content="Сохранить"
                         FontSize="20" Click="saveSocialStatuses_Click"
                         HorizontalAlignment="Right"
-                        Margin="0 0 250 0"/>
+                        Margin="0 0 150 0"/>
 
             </Grid>
 

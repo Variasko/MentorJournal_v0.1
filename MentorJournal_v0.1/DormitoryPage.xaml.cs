@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MentorJournal_v0._1.common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,17 +22,20 @@ namespace MentorJournal_v0._1
     /// </summary>
     public partial class DormitoryPage : Page
     {
-        public string[] name = { "Комиссаров Александр Алексеевич", "Осина Галина Михайловна" };
+
+        CommonThings c = new CommonThings();
+
         public DormitoryPage()
         {
             InitializeComponent();
+            groupName.ItemsSource = c.groups;
         }
 
         private void addDormitoryLiverButton_Click(object sender, RoutedEventArgs e)
         {
             ComboBox cbFIO = new ComboBox 
             {
-                ItemsSource = name,
+                ItemsSource = c.name,
                 SelectedIndex = 0,
                 Margin = new Thickness(10, 0, 50, 10),
                 Height = 30,

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MentorJournal_v0._1.common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,12 +21,13 @@ namespace MentorJournal_v0._1
     /// </summary>
     public partial class SocialPassportPage : Page
     {
-        public string[] name = { "Комиссаров Александр Алексеевич", "Осина Галина Михайловна" };
-        public string[] typeSocialStatus = { "инвалид 1 группы", "Инвалид 2 группы" };
-
+        
+        CommonThings c = new CommonThings();
+        
         public SocialPassportPage()
         {
             InitializeComponent();
+            groupName.ItemsSource = c.groups;
 
         }
 
@@ -33,7 +35,7 @@ namespace MentorJournal_v0._1
         {
             ComboBox cbFIO = new ComboBox
             {
-                ItemsSource = name,
+                ItemsSource = c.name,
                 SelectedIndex = 0,
                 Margin = new Thickness(10, 0, 10, 10),
                 HorizontalAlignment = HorizontalAlignment.Center,
@@ -43,7 +45,7 @@ namespace MentorJournal_v0._1
             };
             ComboBox cbStatus = new ComboBox
             { 
-                ItemsSource = typeSocialStatus,
+                ItemsSource = c.typeSocialStatus,
                 SelectedIndex = 0,
                 Margin = new Thickness(10, 0, 10, 10),
                 HorizontalAlignment = HorizontalAlignment.Center,

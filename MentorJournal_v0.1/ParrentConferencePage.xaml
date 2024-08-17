@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:MentorJournal_v0._1"
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="1060"
@@ -14,6 +15,42 @@
         <Border.Effect>
             <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="Gray"/>
         </Border.Effect>
+
+        <StackPanel>
+
+            <ComboBox VerticalAlignment="Top"
+                          HorizontalAlignment="Center"
+                          Width="200"
+                          Margin="0 20 0 0"
+                          x:Name="groupName"
+                          FontSize="15"
+                          SelectedIndex="0"/>
+
+            <ScrollViewer MaxHeight="500">
+                <StackPanel>
+                    <Border CornerRadius="20"
+                            Height="50"
+                            Background="White"
+                            Margin="20">
+
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="Gray"/>
+                        </Border.Effect>
+                        
+                        <TextBlock Text="Собрание от 25.05.25 На тему Привет мир!"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                   FontSize="30"/>
+                    </Border>
+                </StackPanel>
+            </ScrollViewer>
+
+            <Button x:Name="AddNewConference"
+                    HorizontalAlignment="Center"
+                    Content="Добавить отчёт о собрании"
+                    Margin="0 15 0 0" Click="AddNewConference_Click"/>
+
+        </StackPanel>
 
     </Border>
 </Page>
