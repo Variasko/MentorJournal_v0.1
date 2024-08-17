@@ -40,7 +40,8 @@
                 <Image x:Name="profole"
                        Source="/asset/user.png" 
                        Height="50"
-                       Width="50"/>
+                       Width="50"
+                       MouseDown="profole_MouseDown"/>
 
             </Border>
 
@@ -84,7 +85,7 @@
                             </Image.ToolTip>
                         </Image>
 
-                        <Image x:Name="parrentConference" Source="/asset/parrentConference.png" Width="50" Height="50" Margin="0 0 0 15">
+                        <Image x:Name="parrentConference" Source="/asset/parrentConference.png" Width="50" Height="50" Margin="0 0 0 15" MouseDown="parrentConference_MouseDown">
                             <Image.ToolTip>
                                 <TextBlock>
                                     Протоколы родительских собраний
@@ -92,7 +93,7 @@
                             </Image.ToolTip>
                         </Image>
 
-                        <Image x:Name="wachingList" Source="/asset/wachingList.png" Width="50" Height="50" Margin="0 0 0 15">
+                        <Image x:Name="wachingList" Source="/asset/wachingList.png" Width="50" Height="50" Margin="0 0 0 15" MouseDown="wachingList_MouseDown">
                             <Image.ToolTip>
                                 <TextBlock>
                                     Лист наблюдений(характеристики)
@@ -100,7 +101,7 @@
                             </Image.ToolTip>
                         </Image>
 
-                        <Image x:Name="visitedList" Source="/asset/visitedList.png" Width="50" Height="50" Margin="0 0 0 15">
+                        <Image x:Name="visitedList" Source="/asset/visitedList.png" Width="50" Height="50" Margin="0 0 0 15" MouseDown="visitedList_MouseDown">
                             <Image.ToolTip>
                                 <TextBlock>
                                     Посещение студентами классных часов
@@ -108,7 +109,7 @@
                             </Image.ToolTip>
                         </Image>
 
-                        <Image x:Name="events" Source="/asset/event.png" Width="50" Height="50" Margin="0 0 0 15">
+                        <Image x:Name="events" Source="/asset/event.png" Width="50" Height="50" Margin="0 0 0 15" MouseDown="events_MouseDown">
                             <Image.ToolTip>
                                 <TextBlock>
                                     Планы мероприятий
@@ -116,7 +117,7 @@
                             </Image.ToolTip>
                         </Image>
 
-                        <Image x:Name="hobbies" Source="/asset/hobbies.png" Width="50" Height="50" Margin="0 0 0 15">
+                        <Image x:Name="hobbies" Source="/asset/hobbies.png" Width="50" Height="50" Margin="0 0 0 15" MouseDown="hobbies_MouseDown">
                             <Image.ToolTip>
                                 <TextBlock>
                                     Внеучебная занятость
@@ -124,7 +125,7 @@
                             </Image.ToolTip>
                         </Image>
 
-                        <Image x:Name="activists" Source="/asset/activist.png" Width="50" Height="50" Margin="0 0 0 15">
+                        <Image x:Name="activists" Source="/asset/activist.png" Width="50" Height="50" Margin="0 0 0 15" MouseDown="activists_MouseDown">
                             <Image.ToolTip>
                                 <TextBlock>
                                     Активисты группы
@@ -132,7 +133,7 @@
                             </Image.ToolTip>
                         </Image>
 
-                        <Image x:Name="individualWork" Source="/asset/individualWork.png" Width="50" Height="50" Margin="0 0 0 15">
+                        <Image x:Name="individualWork" Source="/asset/individualWork.png" Width="50" Height="50" Margin="0 0 0 15" MouseDown="individualWork_MouseDown">
                             <Image.ToolTip>
                                 <TextBlock>
                                     Индивидуальная работа со студентами/родителями

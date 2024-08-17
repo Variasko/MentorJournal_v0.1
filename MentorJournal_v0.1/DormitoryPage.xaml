@@ -15,10 +15,69 @@
             <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="Gray"/>
         </Border.Effect>
 
-        <TextBlock Text="Dormitory"
-                   FontSize="30"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"/>
+        <StackPanel>
 
+            <ScrollViewer VerticalScrollBarVisibility="Hidden"
+                          MaxHeight="500"
+                          VerticalAlignment="Top"
+                          Margin="25"
+                          Width="900"
+                          x:Name="socialScroll">
+
+                <Grid x:Name="socialGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0"
+                                x:Name="fioStack">
+                        
+                        <TextBlock Text="Студент"
+                                   FontSize="20"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"/>
+                    
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1"
+                                x:Name="roomStack">
+
+                        <TextBlock Text="Комната"
+                                   FontSize="20"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"/>
+
+                    </StackPanel>
+
+                </Grid>
+
+            </ScrollViewer>
+
+            <Grid>
+
+                <Button x:Name="addDormitoryLiverButton"
+                    Height="40"
+                    Width="150"
+                    Style="{StaticResource MaterialDesignFlatAccentBgButton}"
+                    Content="Добавить"
+                    FontSize="20"
+                        HorizontalAlignment="Left"
+                        Margin="250 0 0 0" Click="addDormitoryLiverButton_Click"/>
+
+                <Button x:Name="saveRooms"
+                        Height="40"
+                        Width="150"
+                        Style="{StaticResource MaterialDesignFlatAccentBgButton}"
+                        Content="Сохранить"
+                        FontSize="20"
+                        HorizontalAlignment="Right"
+                        Margin="0 0 250 0" Click="saveRooms_Click"/>
+
+            </Grid>
+
+
+
+        </StackPanel>
     </Border>
 </Page>

@@ -47,4 +47,9 @@
     <Resource Include="asset\wachingList.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="interface\" />
+    <Folder Include="model\" />
+  </ItemGroup>
+
 </Project>

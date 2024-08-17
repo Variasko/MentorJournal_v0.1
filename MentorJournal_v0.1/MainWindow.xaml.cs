@@ -21,7 +21,7 @@ namespace MentorJournal_v0._1
     /// </summary>
     public partial class MainWindow : Window
     {
-        DropShadowEffect sideMenueElemntShadowEffect = new DropShadowEffect
+        DropShadowEffect sideMenuElemntShadowEffect = new DropShadowEffect
         {
             Color = System.Windows.Media.Colors.Gray,
             BlurRadius = 20,
@@ -34,6 +34,7 @@ namespace MentorJournal_v0._1
         {
             InitializeComponent();
             activeImage = socialPassport;
+            activeImage.Effect = sideMenuElemntShadowEffect;
             var element = sideMenu.Children;
             profole.MouseDown += sideMenuElement_MouseDown;
             foreach ( Image child in element )
@@ -55,7 +56,7 @@ namespace MentorJournal_v0._1
         {
             activeImage.Effect = null;
             Image img = sender as Image;
-            img.Effect = sideMenueElemntShadowEffect;
+            img.Effect = sideMenuElemntShadowEffect;
             activeImage = img;
         }
 
@@ -67,6 +68,46 @@ namespace MentorJournal_v0._1
         private void dormitory_MouseDown(object sender, MouseButtonEventArgs e)
         {
             mainFrame.Navigate(new DormitoryPage());
+        }
+
+        private void parrentConference_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new ParrentConferencePage());
+        }
+
+        private void wachingList_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new WachingListPage());
+        }
+
+        private void visitedList_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new VisitedListPage());
+        }
+
+        private void events_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new AllEventsPage());
+        }
+
+        private void hobbies_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new AllHobbiesPage());
+        }
+
+        private void activists_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new ActivistsPage());
+        }
+
+        private void individualWork_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new AllIndividualWorkPage());
+        }
+
+        private void profole_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new ProfilePage());
         }
     }
 }

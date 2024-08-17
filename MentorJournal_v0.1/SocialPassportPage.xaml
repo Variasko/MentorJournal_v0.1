@@ -32,10 +32,24 @@
                     </Grid.ColumnDefinitions>
 
                     <StackPanel Grid.Column="0"
-                                x:Name="fioStack"/>
+                                x:Name="fioStack">
+
+                        <TextBlock Text="Студент"
+                                   FontSize="20"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"/>
+
+                    </StackPanel>
 
                     <StackPanel Grid.Column="1"
-                                x:Name="statusStack"/>
+                                x:Name="statusStack">
+
+                        <TextBlock Text="Статус"
+                                   FontSize="20"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"/>
+
+                    </StackPanel>
 
                 </Grid>
 

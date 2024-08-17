@@ -31,12 +31,27 @@ namespace MentorJournal_v0._1
 
         private void addInvalidButton_Click(object sender, RoutedEventArgs e)
         {
-            ComboBox cbFIO = new ComboBox { ItemsSource = name };
-            ComboBox cbStatus = new ComboBox { ItemsSource = typeSocialStatus };
-            cbFIO.SelectedIndex = 0;
-            cbStatus.SelectedIndex = 0;
-            cbFIO.Margin = new Thickness(50, 0, 50, 10);
-            cbStatus.Margin = new Thickness(10, 0, 10, 10);
+            ComboBox cbFIO = new ComboBox
+            {
+                ItemsSource = name,
+                SelectedIndex = 0,
+                Margin = new Thickness(10, 0, 10, 10),
+                HorizontalAlignment = HorizontalAlignment.Center,
+                Width = 400,
+                HorizontalContentAlignment = HorizontalAlignment.Center,
+                FontSize = 15
+            };
+            ComboBox cbStatus = new ComboBox
+            { 
+                ItemsSource = typeSocialStatus,
+                SelectedIndex = 0,
+                Margin = new Thickness(10, 0, 10, 10),
+                HorizontalAlignment = HorizontalAlignment.Center,
+                Width = 400,
+                HorizontalContentAlignment = HorizontalAlignment.Center,
+                FontSize = 15
+            };
+
             fioStack.Children.Add(cbFIO);
             statusStack.Children.Add(cbStatus);
         }
@@ -52,7 +67,7 @@ namespace MentorJournal_v0._1
             {
                 if (FIOs[i] is ComboBox fio && statuses[i] is ComboBox status)
                 {
-                    stringBuilder.Append($"{fio.SelectedValue}-{status.SelectedValue}\n");
+                    stringBuilder.Append($"{fio.SelectedValue} - {status.SelectedValue}\n");
                 }
             }
 

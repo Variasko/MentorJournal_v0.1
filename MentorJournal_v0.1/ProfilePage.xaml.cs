@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace MentorJournal_v0._1
 {
     /// <summary>
-    /// Логика взаимодействия для IndividialWorkPage.xaml
+    /// Логика взаимодействия для ProfilePage.xaml
     /// </summary>
-    public partial class IndividialWorkPage : Page
+    public partial class ProfilePage : Page
     {
-        public IndividialWorkPage()
+        public ProfilePage()
         {
             InitializeComponent();
         }
