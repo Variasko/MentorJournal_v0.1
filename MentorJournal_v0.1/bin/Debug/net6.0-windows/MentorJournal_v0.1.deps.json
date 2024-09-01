@@ -1,0 +1,155 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MentorJournal_v0.1/1.0.0": {
+        "dependencies": {
+          "H.XamlStyler": "1.0.4",
+          "MaterialDesignColors": "2.1.4",
+          "MaterialDesignThemes": "3.1.3",
+          "Newtonsoft.Json": "13.0.3",
+          "SharpVectors": "1.8.4.1"
+        },
+        "runtime": {
+          "MentorJournal_v0.1.dll": {}
+        }
+      },
+      "H.XamlStyler/1.0.4": {
+        "dependencies": {
+          "Irony": "1.2.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/H.XamlStyler.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
+          }
+        }
+      },
+      "Irony/1.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/Irony.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "MaterialDesignColors/2.1.4": {
+        "runtime": {
+          "lib/net6.0/MaterialDesignColors.dll": {
+            "assemblyVersion": "2.1.4.0",
+            "fileVersion": "2.1.4.0"
+          }
+        }
+      },
+      "MaterialDesignThemes/3.1.3": {
+        "dependencies": {
+          "MaterialDesignColors": "2.1.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/MaterialDesignThemes.Wpf.dll": {
+            "assemblyVersion": "3.1.3.1513",
+            "fileVersion": "3.1.3.1513"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
+        }
+      },
+      "SharpVectors/1.8.4.1": {
+        "runtime": {
+          "lib/net6.0-windows7.0/SharpVectors.Converters.Wpf.dll": {
+            "assemblyVersion": "1.8.4.1",
+            "fileVersion": "1.8.4.1"
+          },
+          "lib/net6.0-windows7.0/SharpVectors.Core.dll": {
+            "assemblyVersion": "1.8.4.1",
+            "fileVersion": "1.8.4.1"
+          },
+          "lib/net6.0-windows7.0/SharpVectors.Css.dll": {
+            "assemblyVersion": "1.8.4.1",
+            "fileVersion": "1.8.4.1"
+          },
+          "lib/net6.0-windows7.0/SharpVectors.Dom.dll": {
+            "assemblyVersion": "1.8.4.1",
+            "fileVersion": "1.8.4.1"
+          },
+          "lib/net6.0-windows7.0/SharpVectors.Model.dll": {
+            "assemblyVersion": "1.8.4.1",
+            "fileVersion": "1.8.4.1"
+          },
+          "lib/net6.0-windows7.0/SharpVectors.Rendering.Gdi.dll": {
+            "assemblyVersion": "1.8.4.1",
+            "fileVersion": "1.8.4.1"
+          },
+          "lib/net6.0-windows7.0/SharpVectors.Rendering.Wpf.dll": {
+            "assemblyVersion": "1.8.4.1",
+            "fileVersion": "1.8.4.1"
+          },
+          "lib/net6.0-windows7.0/SharpVectors.Runtime.Wpf.dll": {
+            "assemblyVersion": "1.8.4.1",
+            "fileVersion": "1.8.4.1"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MentorJournal_v0.1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "H.XamlStyler/1.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RkrH3XZDjX1qnmdpwOpt1/KR3sY4g4bjqd0Y05X5ZOedK1p9gDESR1+8jGzEQHEWn3lgp+ZOJX5B/9ffamyLVw==",
+      "path": "h.xamlstyler/1.0.4",
+      "hashPath": "h.xamlstyler.1.0.4.nupkg.sha512"
+    },
+    "Irony/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xobL8fbz01pOacoWPjBw1K1tT4Sell3n0nQlutAGpqJ7R3sEoL+pB1gkWUBm1NcfQ7EAyPfIcAt4LVvAQhB7tg==",
+      "path": "irony/1.2.0",
+      "hashPath": "irony.1.2.0.nupkg.sha512"
+    },
+    "MaterialDesignColors/2.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C4Oy+qkjMoMPoZKyqYdCnIYtK8c0OSIHmNP73Vgc69NjiUG093xTkE7W/Ks54cTDS7fmWOtUHfwISTVTtb/YKg==",
+      "path": "materialdesigncolors/2.1.4",
+      "hashPath": "materialdesigncolors.2.1.4.nupkg.sha512"
+    },
+    "MaterialDesignThemes/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pyB9HqalbdGmX9iGUIjb82zgtQ5zUCfRqZG/w6AV3+oAI3WMEgzAwzA+NfIlzSPQx4iUz+Xl/O6HcsXoxuuM0g==",
+      "path": "materialdesignthemes/3.1.3",
+      "hashPath": "materialdesignthemes.3.1.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "SharpVectors/1.8.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AwfvbxeQRUB2h1Q+kAHJm+UX/FPr66pco4oESfElzTMDVqPko0R7rSb+bYCS+qkorwnOV66Txbly5l2NRDrK0Q==",
+      "path": "sharpvectors/1.8.4.1",
+      "hashPath": "sharpvectors.1.8.4.1.nupkg.sha512"
+    }
+  }
+}
