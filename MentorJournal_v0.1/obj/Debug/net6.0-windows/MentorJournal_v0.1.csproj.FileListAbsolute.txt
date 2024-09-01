@@ -58,3 +58,6 @@ C:\Users\caxac\source\repos\MentorJournal_v0.1\MentorJournal_v0.1\obj\Debug\net6
 C:\Users\caxac\source\repos\MentorJournal_v0.1\MentorJournal_v0.1\obj\Debug\net6.0-windows\ProfilePage.baml
 C:\Users\caxac\source\repos\MentorJournal_v0.1\MentorJournal_v0.1\obj\Debug\net6.0-windows\AddNewParrentConferencePage.g.cs
 C:\Users\caxac\source\repos\MentorJournal_v0.1\MentorJournal_v0.1\obj\Debug\net6.0-windows\AddNewParrentConferencePage.baml
+C:\Users\caxac\source\repos\MentorJournal_v0.1\MentorJournal_v0.1\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\caxac\source\repos\MentorJournal_v0.1\MentorJournal_v0.1\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\caxac\source\repos\MentorJournal_v0.1\MentorJournal_v0.1\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
