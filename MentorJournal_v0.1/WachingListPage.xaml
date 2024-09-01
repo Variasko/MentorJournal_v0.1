@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:MentorJournal_v0._1"
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="1060"
@@ -12,8 +13,27 @@
             CornerRadius="20">
 
         <Border.Effect>
-            <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="Gray"/>
+            <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Gray"/>
         </Border.Effect>
+
+        <StackPanel Width="1000"
+                    Height="500"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+            <Expander Header="Комиссаров Александр ">
+                <TextBox Name="decision"
+                     AcceptsReturn="True"
+                     TextWrapping="Wrap"
+                     VerticalScrollBarVisibility="Hidden"
+                     Height="100"
+                     Margin="20"
+                     materialDesign:HintAssist.Hint="Принятое решение"
+                     Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+                     Width="450"/>
+            </Expander>
+            
+        </StackPanel>
 
     </Border>
 </Page>

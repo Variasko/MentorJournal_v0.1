@@ -34,7 +34,7 @@
                     Background="White">
 
                 <Border.Effect>
-                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="Gray"/>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Gray"/>
                 </Border.Effect>
 
                 <Image x:Name="profole"
@@ -62,7 +62,7 @@
                     MaxHeight="600" Height="600">
 
                 <Border.Effect>
-                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="Gray"/>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Gray"/>
                 </Border.Effect>
 
                 <ScrollViewer VerticalScrollBarVisibility="Hidden">
